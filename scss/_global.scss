@@ -1,0 +1,98 @@
+@import url('../icomoon/style.css');
+
+html {
+	box-sizing: border-box;
+}
+*,*::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: #111111;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: $red;
+	transition: all .2s;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.container {
+	max-width: 1200px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 1px 15px;
+}
+
+.bigBtn {
+	display: inline-block;
+	a {
+		width: 200px;
+		height: 50px;
+		border-radius: 5px;
+		color: #fefefe;
+		font-size: 16px;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $red;
+		transition: all .2s;
+
+		&:hover {
+			background-color: $red;
+			text-decoration: none;
+		}
+	}
+}
+
+.Btn {
+	display: inline-block;
+	a {
+		width: 140px;
+		height: 50px;
+		border-radius: 5px;
+		border: 1px solid $red;
+		color: #fefefe;
+		font-size: 12px;
+		letter-spacing: 0.6px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all .2s;
+		&:hover {
+			background-color: $red;
+			text-decoration: none;
+		}
+	}
+}
+
+.logo {
+	min-width: 197px;
+}
+
+.supTitle {
+	color: $blue;
+	font-size: 18px;
+	letter-spacing: 0.9px;
+}
+
+.title {
+	color: #ffffff;
+	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	h2 {
+		margin: 15px 0px 29px;
+	}
+}
+
+.hr-tiny {
+	width: 60px;
+	height: 2px;
+	background-color: $red;
+}
