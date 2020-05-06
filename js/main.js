@@ -86,7 +86,6 @@ sliderVideosItem.onclick = (event) => {
 		video.src = `https://www.youtube.com/embed/${event.target.dataset.url}`;
 	}
 }
-});
 
 $('.burger').click(function() {
 	$('.burger span:nth-child(1)').toggleClass('first');
@@ -100,4 +99,28 @@ $('.burger').click(function() {
 	let elem = document.querySelector('.header_mobileNav');
 	elem.classList.toggle('movileNav-active');
 });
+
+$(".header_nav_item_link").click(function() {
+	console.log('click')
+  var elementClick = $(this).attr("href")
+  var destination = $(elementClick).offset().top;
+  jQuery("html:not(:animated),body:not(:animated)").animate({
+    scrollTop: destination
+  }, 600);
+  return false;
+});
+
+$(".header_mobileNav_item_link").click(function() {
+	console.log('click')
+  var elementClick = $(this).attr("href")
+  var destination = $(elementClick).offset().top;
+  jQuery("html:not(:animated),body:not(:animated)").animate({
+    scrollTop: destination
+  }, 600);
+  return false;
+});
+
+
+});
+
 
